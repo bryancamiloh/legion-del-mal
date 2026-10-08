@@ -49,6 +49,8 @@ Infiltrar los servidores del Banco Mundial y transferir fondos a las cuentas cif
 | Dispositivos de acceso remoto (x4) | Catwoman    | Pendiente                                      |
 | Distracción en Gotham              | Joker       | ✅ Listo (insiste en que será "su mejor obra") |
 | Coartada corporativa LexCorp       | Lex Luthor  | ✅ Lista                                       |
+| Fragmento de Kryptonita            | Lex Luthor  | Pendiente                                      |
+| Kryptonita de respaldo                  | Lex Luthor  | Pendiente                                  |
 
 ## Riesgos conocidos
 
@@ -56,6 +58,7 @@ Infiltrar los servidores del Banco Mundial y transferir fondos a las cuentas cif
 2. **JARVIS tiene IA adaptativa.** Si detecta el virus, aprenderá y bloqueará futuros intentos.
 3. **Catwoman podría robar algo extra por su cuenta.** No sería la primera vez.
 4. **Si Superman se involucra**, puede revisar los servidores con visión de rayos X. Asignar a Lex Luthor un fragmento de Kryptonita como respaldo.
+5. **Si Darkseid interviene**, puede aniquilar al equipo con facilidad. Se debe tener un plan de contingencia para neutralizarlo o evitar su atención.
 
 ## Plan de escape
 
