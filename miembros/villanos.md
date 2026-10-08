@@ -5,6 +5,7 @@
 3. Brainiac
 4. Joker
 5. Harley Quinn
+6. Darkseid
 
 ## Notas
 - Se debe tener en cuenta que estos villanos poseen habilidades y recursos únicos que los hacen extremadamente peligrosos.
