@@ -9,3 +9,9 @@ La operación de congelar Metrópolis es un plan estratégico de la Legión del 
 3. **Control de la respuesta de los héroes:** Se implementan estrategias para distraer o neutralizar a los héroes que intenten intervenir.
 4. **Mantenimiento de la congelación:** Se realizan ajustes continuos en la tecnología para garantizar que la ciudad permanezca congelada durante el tiempo necesario.
 5. **Evaluación de resultados:** Se analiza el impacto de la operación en la ciudad y en sus defensores para planificar futuras acciones.
+
+## Notas
+- La operación debe coordinarse cuidadosamente para evitar daños colaterales significativos.
+- Se debe contar con un plan de contingencia en caso de que los héroes logren interferir con la operación.
+- Se debe asegurar la confidencialidad de la operación para evitar filtraciones que puedan alertar a los héroes.
+- Es crucial contar con un equipo de respuesta rápida para manejar cualquier imprevisto durante la operación.
