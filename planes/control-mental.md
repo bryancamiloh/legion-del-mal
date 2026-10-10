@@ -9,3 +9,9 @@ El control mental es una técnica avanzada utilizada por la Legión del Mal para
 3. **Implementación tecnológica:** Se utilizan dispositivos y software especializados para inducir estados de sugestión y manipulación mental.
 4. **Monitoreo constante:** Se supervisa continuamente al objetivo para asegurar la efectividad del control y ajustar las técnicas según sea necesario.
 5. **Mantenimiento de la lealtad:** Se aplican estrategias de refuerzo y recompensas para garantizar que el objetivo permanezca bajo la influencia de la Legión del Mal.
+
+## Notas
+- La operación debe realizarse con extrema discreción para evitar que el objetivo sospeche del control mental.
+- Es importante contar con un plan de contingencia en caso de que el objetivo logre resistir o escapar del control.
+- Se debe garantizar la confidencialidad de la operación para prevenir filtraciones que puedan alertar a otros objetivos potenciales.
+- El equipo encargado debe estar preparado para manejar cualquier reacción adversa del objetivo durante la implementación del control mental.
