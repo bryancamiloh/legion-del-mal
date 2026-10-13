@@ -2,11 +2,11 @@
 
 ![Con logo](https://img.shields.io/badge/Git-2.39-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-![Workflow](https://img.shields.io/github/actions/workflow/status/bryancamiloh/legion-del-mal/ci.yml)
-![Release](https://img.shields.io/github/v/release/bryancamiloh/legion-del-mal)
+![Workflow](https://img.shields.io/github/actions/workflow/status/bryancamiloh/legion-del-mal/ci.yml?cacheSeconds=60)
+![Release](https://img.shields.io/github/v/release/bryancamiloh/legion-del-mal?cacheSeconds=60)
 ![Issues](https://img.shields.io/github/issues/bryancamiloh/legion-del-mal)
 ![Último commit](https://img.shields.io/github/last-commit/bryancamiloh/legion-del-mal)
-![Licencia](https://img.shields.io/github/license/bryancamiloh/legion-del-mal)
+![Licencia](https://img.shields.io/github/license/bryancamiloh/legion-del-mal?cacheSeconds=60)
 
 # 🦹‍♂️ La Legión del Mal
 
