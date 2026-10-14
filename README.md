@@ -46,6 +46,9 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 - **Catwoman** — Robos de alta precisión
 - **Venom** — Fuerza bruta y operaciones de intimidación
 - **Green Goblin** — Tecnología avanzada y tácticas de terror
+- **Harley Quinn** — Experta en caos y combate cuerpo a cuerpo
+- **Deadpool** — Mercenario impredecible y experto en combate cuerpo a cuerpo
+- **Thanos** — Estratega galáctico y portador del Guantelete del Infinito
 
 ## Reglas de la Legión
 
@@ -54,6 +57,7 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 3. **Los códigos de lanzamiento JAMÁS se suben al repositorio.** El que los suba será entregado a Batman.
 4. **Los fracasos se documentan.** Aprendemos de ellos para la próxima vez.
 5. **Nada de monólogos explicando el plan al héroe.** Joker, esto va especialmente por ti.
+6. **La lealtad al Consejo es absoluta.** Cualquier traición será severamente castigada.
 
 ## Estado actual
 
