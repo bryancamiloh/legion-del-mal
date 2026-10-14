@@ -64,6 +64,7 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 📡 **Misión activa:** Operación Banco Mundial
 🔬 **En desarrollo:** Satélite Congelador
 📋 **En planificación:** Proyecto Krypton (clonar a Superman)
+📋 **En estudio:** Suero de Capitán América
 
 ## Enemigos principales
 
@@ -76,7 +77,7 @@ La Liga de la Justicia y los Vengadores han formado una alianza. Nuestros expedi
 - 🟢 Operativa
 - 🟡 En desarrollo
 - 🔴 En planificación
-- 🔴 En desarrollo
+- 🔴 En estudio
 
 ---
 
