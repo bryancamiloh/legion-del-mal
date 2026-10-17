@@ -7,6 +7,7 @@
 5. Harley Quinn
 6. Darkseid
 7. Bane
+8. Siniestro
 
 ## Notas
 - Se debe tener en cuenta que estos villanos poseen habilidades y recursos únicos que los hacen extremadamente peligrosos.
