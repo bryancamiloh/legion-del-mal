@@ -30,3 +30,12 @@ Spiderman ha enfrentado a numerosos villanos a lo largo de su carrera. Algunos d
 - Spider-Man: No Way Home (2021)
 - Spider-Man: Across the Spider-Verse (2023)
 - Spider-Man: Beyond the Spider-Verse (2024)
+
+## Conocidos
+
+- Mary Jane Watson
+- Gwen Stacy
+- Tía May
+- Tío Ben
+- Harry Osborn
+- J. Jonah Jameson
