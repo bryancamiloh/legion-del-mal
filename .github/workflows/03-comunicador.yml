@@ -14,6 +14,20 @@ on:
           - Mystique
           - Brainiac
 
+      Mensaje:
+        description: "Mensaje para el consejo"
+        required: true
+        default: "La misión fue un éxito"
+      
+      Prioridad:
+        description: "Nivel de priporidad"
+        required: true
+        type: choice
+        options:
+          - 🟢 Normal
+          - 🟡 Alta
+          - 🔴 Crítica
+
 jobs:
   transmitir-mensaje:
     runs-on: ubuntu-latest
