@@ -27,6 +27,17 @@ on:
           - 🟢 Normal
           - 🟡 Alta
           - 🔴 Crítica
+      
+      Cow_character:
+        description: "Personaje a imprimir en el mensaje"
+        required: true
+        type: choice
+        options:
+          - C3PO
+          - atom
+          - eyes
+          - dragon
+          - dragon-and-cow
 
 jobs:
   transmitir-mensaje:
@@ -46,7 +57,7 @@ jobs:
           echo ""
           echo "fecha: $( date -u +'%d/%m/%Y  - %H:%M UTC')"
           echo "----Mensaje----"
-          cowsay -f eyes "${{ inputs.Mensaje }}"
+          cowsay -f "${{ inputs.cow_character }}" "${{ inputs.Mensaje }}"
           echo ""
           echo "--- ${{ inputs.Villano }}"
           echo "..."
