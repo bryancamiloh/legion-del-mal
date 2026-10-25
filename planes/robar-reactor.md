@@ -26,3 +26,10 @@
 ## Conclusión
 
 La operación de robo de un reactor conlleva riesgos significativos y requiere una planificación meticulosa. Es crucial seguir todas las medidas de seguridad y tener planes de contingencia para minimizar los peligros. La coordinación y comunicación constante con el equipo son esenciales para el éxito de la misión y la seguridad de todos los involucrados.
+
+## Plan de escape
+
+1. **Rutas de evacuación:** Se establecen rutas seguras para que los miembros de la Legión del Mal puedan retirarse rápidamente en caso de que la operación sea comprometida.
+2. **Puntos de encuentro:** Se designan lugares seguros donde los miembros puedan reunirse después de evacuar.
+3. **Medios de transporte:** Se aseguran vehículos y otros medios de transporte para facilitar una retirada rápida y ordenada.
+4. **Comunicación:** Se mantiene un sistema de comunicación constante para coordinar la evacuación y asegurar que todos los miembros estén informados.

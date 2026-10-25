@@ -15,3 +15,10 @@ La operación de congelar Metrópolis es un plan estratégico de la Legión del 
 - Se debe contar con un plan de contingencia en caso de que los héroes logren interferir con la operación.
 - Se debe asegurar la confidencialidad de la operación para evitar filtraciones que puedan alertar a los héroes.
 - Es crucial contar con un equipo de respuesta rápida para manejar cualquier imprevisto durante la operación.
+
+## Plan de escape
+
+1. **Rutas de evacuación:** Se establecen rutas seguras para que los miembros de la Legión del Mal puedan retirarse rápidamente en caso de que la operación sea comprometida.
+2. **Puntos de encuentro:** Se designan lugares seguros donde los miembros puedan reunirse después de evacuar.
+3. **Medios de transporte:** Se aseguran vehículos y otros medios de transporte para facilitar una retirada rápida y ordenada.
+4. **Comunicación:** Se mantiene un sistema de comunicación constante para coordinar la evacuación y asegurar que todos los miembros estén informados.

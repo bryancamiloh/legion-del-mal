@@ -15,3 +15,10 @@ El control mental es una técnica avanzada utilizada por la Legión del Mal para
 - Es importante contar con un plan de contingencia en caso de que el objetivo logre resistir o escapar del control.
 - Se debe garantizar la confidencialidad de la operación para prevenir filtraciones que puedan alertar a otros objetivos potenciales.
 - El equipo encargado debe estar preparado para manejar cualquier reacción adversa del objetivo durante la implementación del control mental.
+
+## Plan de escape
+
+1. **Rutas de evacuación:** Se establecen rutas seguras para que los miembros de la Legión del Mal puedan retirarse rápidamente en caso de que la operación sea comprometida.
+2. **Puntos de encuentro:** Se designan lugares seguros donde los miembros puedan reunirse después de evacuar.
+3. **Medios de transporte:** Se aseguran vehículos y otros medios de transporte para facilitar una retirada rápida y ordenada.
+4. **Comunicación:** Se mantiene un sistema de comunicación constante para coordinar la evacuación y asegurar que todos los miembros estén informados.
