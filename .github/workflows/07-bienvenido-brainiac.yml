@@ -1,0 +1,59 @@
+name: Bienvenido Brainiac - Nuevo Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  responder-issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Comentar en el issue
+        uses: actions/github-script@v9.0.0
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const autor = issue.user.login;
+            const etiquetas = issue.labels.length
+              ? issue.labels.map(l => `\`${l.name}\``).join(', ')
+              : '_ninguna_';
+            const descripcion = (issue.body || '').trim();
+            const extracto = descripcion.length > 300
+              ? descripcion.slice(0, 300) + '…'
+              : (descripcion || '_Sin descripción_');
+            const fecha = new Date(issue.created_at).toUTCString();
+
+            const body = [
+              '## 🧠 Brainiac ha interceptado tu issue',
+              '',
+              '> *"Tu mensaje ha sido capturado, analizado y archivado en mi colección. Ningún conocimiento escapa a Brainiac."*',
+              '',
+              `Saludos, **@${autor}**. Soy **Brainiac**, el androide coleccionista de Colu. Tu issue está siendo revisado por mi intelecto superior.`,
+              '',
+              '### 📋 Expediente del issue',
+              '| Campo | Dato |',
+              '|---|---|',
+              `| 🔢 Número | #${issue.number} |`,
+              `| 📝 Título | ${issue.title} |`,
+              `| 👤 Autor | @${autor} |`,
+              `| 🕒 Creado | ${fecha} |`,
+              `| 🏷️ Etiquetas | ${etiquetas} |`,
+              `| 🔗 Enlace | ${issue.html_url} |`,
+              '',
+              '### 📜 Extracto capturado',
+              `> ${extracto.replace(/\n/g, '\n> ')}`,
+              '',
+              '---',
+              '*Brainiac no olvida, no perdona los bugs sin reproducir… y jamás encoge una ciudad sin antes documentarla.* 🤖',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body
+            });
