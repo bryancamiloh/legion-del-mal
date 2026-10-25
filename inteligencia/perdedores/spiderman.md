@@ -39,3 +39,11 @@ Spiderman ha enfrentado a numerosos villanos a lo largo de su carrera. Algunos d
 - Tío Ben
 - Harry Osborn
 - J. Jonah Jameson
+
+## Estrategia recomendada
+
+1. **Evitar enfrentamientos directos:** Spiderman es extremadamente ágil y fuerte, por lo que es recomendable evitar enfrentamientos directos y buscar estrategias de distracción.
+2. **Explotar su sentido arácnido:** Su sentido arácnido le permite detectar peligros inminentes, por lo que es importante moverse de manera impredecible y no predecible.
+3. **Atacar desde la distancia:** Utilizar ataques a distancia o trampas para mantener la distancia y minimizar el riesgo de ser atrapado por sus telarañas.
+4. **Conocer su entorno:** Spiderman es muy dependiente del entorno urbano para moverse rápidamente, por lo que es útil conocer bien el terreno y buscar lugares donde pueda tener desventaja.
+5. **Desestabilizar emocionalmente:** Spiderman tiene fuertes lazos emocionales con sus seres queridos, por lo que cualquier estrategia que pueda distraerlo o desestabilizarlo emocionalmente puede ser efectiva.
