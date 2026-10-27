@@ -57,3 +57,22 @@ jobs:
               issue_number: issue.number,
               body
             });
+
+      - name: Enviar correo de notificación
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "🧠 Brainiac: nuevo issue #${{ github.event.issue.number }}"
+          to: bryancamiloh@gmail.com
+          from: Brainiac <${{ secrets.SMTP_USERNAME }}>
+          body: |
+            Brainiac ha interceptado un nuevo issue en ${{ github.repository }}.
+
+            Número: #${{ github.event.issue.number }}
+            Título: ${{ github.event.issue.title }}
+            Autor: @${{ github.event.issue.user.login }}
+            Creado: ${{ github.event.issue.created_at }}
+            Enlace: ${{ github.event.issue.html_url }}
