@@ -1,0 +1,120 @@
+name: 08 - Tag to Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout con historial completo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generar changelog detallado
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          PREV_TAG=$(git describe --tags --abbrev=0 "${TAG}^" 2>/dev/null || true)
+          # Árbol vacío de git: base de comparación para la primera versión
+          EMPTY_TREE=$(git hash-object -t tree /dev/null)
+          BASE="${PREV_TAG:-$EMPTY_TREE}"
+
+          if [ -n "$PREV_TAG" ]; then
+            RANGE="${PREV_TAG}..${TAG}"
+          else
+            RANGE="${TAG}"
+          fi
+
+          TMP=$(mktemp -d)
+          COMMITS=$(git rev-list --no-merges --count "$RANGE")
+          AUTORES=$(git log "$RANGE" --no-merges --format='%an' | sort -u | wc -l)
+          STATS=$(git diff --shortstat "$BASE" "$TAG")
+
+          # Un bloque por commit, agrupado en un archivo por tipo convencional
+          for H in $(git rev-list --no-merges --reverse "$RANGE"); do
+            IFS='|' read -r HASH AUTOR FECHA ASUNTO <<< "$(git show -s --format='%h|%an|%ad|%s' --date=short "$H")"
+            TIPO=$(printf '%s' "$ASUNTO" | sed -nE 's/^([A-Za-z]+)(\([^)]*\))?!?:.*/\1/p' | tr '[:upper:]' '[:lower:]')
+            case "$TIPO" in
+              feat|fix|docs|refactor|test|chore) GRUPO="$TIPO" ;;
+              *) GRUPO="otros" ;;
+            esac
+
+            {
+              echo "#### \`${HASH}\` ${ASUNTO}"
+              echo
+              echo "- **Autor:** ${AUTOR}"
+              echo "- **Fecha:** ${FECHA}"
+              CUERPO=$(git show -s --format=%b "$H")
+              if [ -n "$CUERPO" ]; then
+                echo
+                echo "$CUERPO" | sed 's/^/> /'
+              fi
+              echo
+              echo "**Archivos:**"
+              git show --format= --name-status "$H" | while IFS=$'\t' read -r ESTADO ARCHIVO _; do
+                case "${ESTADO:0:1}" in
+                  A) ACCION="añadido" ;;
+                  M) ACCION="modificado" ;;
+                  D) ACCION="eliminado" ;;
+                  R) ACCION="renombrado" ;;
+                  *) ACCION="$ESTADO" ;;
+                esac
+                echo "- \`${ARCHIVO}\` (${ACCION})"
+              done
+              echo
+            } >> "$TMP/$GRUPO.md"
+          done
+
+          OUT=CHANGELOG_RELEASE.md
+          {
+            echo "# Release ${TAG}"
+            echo
+            echo "## Resumen"
+            echo
+            echo "- **Comparado con:** ${PREV_TAG:-primera versión (sin tag anterior)}"
+            echo "- **Commits:** ${COMMITS}"
+            echo "- **Autores:** ${AUTORES}"
+            echo "- **Cambios:** ${STATS:-sin cambios en el contenido}"
+            echo
+            echo "## Cambios por tipo"
+            echo
+            for G in feat fix docs refactor test chore otros; do
+              case "$G" in
+                feat) T="Nuevas funcionalidades" ;;
+                fix) T="Correcciones" ;;
+                docs) T="Documentación" ;;
+                refactor) T="Refactorización" ;;
+                test) T="Pruebas" ;;
+                chore) T="Mantenimiento" ;;
+                otros) T="Otros cambios" ;;
+              esac
+              if [ -s "$TMP/$G.md" ]; then
+                echo "### ${T}"
+                echo
+                cat "$TMP/$G.md"
+              fi
+            done
+            echo "## Estadísticas de archivos"
+            echo
+            echo "| Archivo | Líneas añadidas | Líneas eliminadas |"
+            echo "|---|---:|---:|"
+            git diff --numstat "$BASE" "$TAG" | while read -r ADD DEL ARCHIVO; do
+              echo "| \`${ARCHIVO}\` | ${ADD} | ${DEL} |"
+            done
+          } > "$OUT"
+
+          rm -rf "$TMP"
+          cat "$OUT"
+
+      - name: Crear release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name }}
+          body_path: CHANGELOG_RELEASE.md
+          generate_release_notes: true
